@@ -202,7 +202,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "GeneralSans", cursive;
+  font-family: "GeneralSans", sans-serif;
   margin: 0px;
   margin-bottom: 15px;
   font-weight: 600;
@@ -2580,7 +2580,7 @@ nav .breadcrumb li {
 }
 
 .preloader .animation-preloader .txt-loading {
-  font: bold 5em "GeneralSans", cursive, sans-serif;
+  font: bold 5em "GeneralSans", sans-serif, sans-serif;
   text-align: center;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -2647,7 +2647,7 @@ nav .breadcrumb li {
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
-  font-family: "GeneralSans", cursive;
+  font-family: "GeneralSans", sans-serif;
   position: absolute;
   top: -3px;
   -webkit-transform: rotateY(-90deg);
