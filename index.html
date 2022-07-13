@@ -281,7 +281,11 @@
                     </div>
                     <div class="col-xl-4 col-md-6">
                         <div class="single-team-member">
-                            <div class="member-img bg-cover" style="background-image: url('assets/img/rafaela.jpg')"></div>
+                            <div class="member-img bg-cover" style="background-image: url('assets/img/rafaela.jpg')">
+                              <div class="middle">
+                                <a href="#modal1" class="theme-btn popup-modal minimal-btn" data-toggle="modal" data-target="#modal1">Ver currículo</a>
+                              </div>
+                            </div>
                             <div class="member-info">
                                 <h4>Rafaela Câmara</h4>
                                 <span>Advogada - OAB/RN 13.380</span>
@@ -294,22 +298,90 @@
                               </div>
                             </div>
                         </div>
+                          <!-- Modal -->
+                        <div class="white-popup mfp-hide" id="modal1">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4>Rafaela Câmara - OAB/RN 13.380</h4>
+                                <button type="button" class="mfp-close section-yellow" aria-label="Fechar">
+                                  &times;
+                                </button>
+                              </div>
+                              <div class="modal-body text-left">
+                                <p>Formada pelo Centro Universitário do Rio Grande do Norte - UNI/RN. </p>
+                                <p>Atua desde 2015 no Direito das Famílias e Sucessões com uma advocacia muito além do direito e do processo.</p>
+                                <ul>
+                                  <li>
+                                    Pós-graduada em Direito das Famílias e sucessões pela Faculdade CERS;
+                                  </li>
+                                  <li>
+                                    Pós-graduada em Advocacia Extrajudicial;
+                                  </li>
+                                  <li>
+                                    Curso de conciliação e mediação promovido pela ESMARN - Escola de Magistratura do Rio Grande do Norte;
+                                  </li>
+                                  <li> Práticas integrativas sistêmicas, com foco na constelação familiar, pelo Constela Natal. </li>
+                                </ul>
+                              </div>
+                              <!-- <div class="modal-footer">
+                                <button type="button" class="btn ml-auto primary-button" data-dismiss="modal">Fechar</button>
+                              </div> -->
+                            </div>
+                          </div>
+                        </div>
                     </div>
                     <div class="col-xl-4 col-md-6">
-                        <div class="single-team-member">
-                            <div class="member-img bg-cover" style="background-image: url('assets/img/ana.jpg')"></div>
-                            <div class="member-info">
-                                <h4>Ana Carolina Nagib</h4>
-                                <span>Advogada - OAB/RN 5.438</span>
+                      <div class="single-team-member">
+                          <div class="member-img bg-cover" style="background-image: url('assets/img/ana.jpg')">
+                            <div class="middle">
+                              <a href="#modal2" class="theme-btn popup-modal minimal-btn" data-toggle="modal" data-target="#modal2">Ver currículo</a>
                             </div>
-                            <div class="member-info">
-                              <div class="social-links mt-4 mt-md-0 wow fadeInUp red-color" data-wow-delay=".5" data-wow-duration="1s">
-                                  <a href="#"><i class="fab fa-instagram"></i></a>
-                                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                              </div>
+                          </div>
+                          <div class="member-info">
+                            <h4>Ana Carolina Nagib</h4>
+                            <span>Advogada - OAB/RN 5.438</span>
+                          </div>
+                          <div class="member-info">
+                            <div class="social-links mt-4 mt-md-0 wow fadeInUp red-color" data-wow-delay=".5" data-wow-duration="1s">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
                             </div>
+                          </div>
+                      </div>
+                        <!-- Modal -->
+                      <div class="white-popup mfp-hide" id="modal2">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4>Ana Carolina Nagib - OAB/RN 5.438</h4>
+                              <button type="button" class="mfp-close section-yellow" aria-label="Fechar">
+                                &times;
+                              </button>
+                            </div>
+                            <div class="modal-body text-left">
+                              <p>Formada pela Universidade Veiga de Almeida/RJ. </p>
+                              <p>Especialista em Direito Imobiliário e Notarial  (ESA/OAB), Direito do Consumidor (IBMEC/Damásio) e em Advocacia Extrajudicial (LEGALE).</p>
+                              <ul>
+                                <li>
+                                  Membro do Instituto Brasileiro de Direito Imobiliário - IBRADIM;
+                                </li>
+                                <li>
+                                  Quase 10 anos de atuação em escritórios junto a grandes empresas, com vasta experiência em gestão contenciosa cível.
+                                </li>
+                                <li>
+                                  Curso de conciliação e mediação promovido pela ESMARN - Escola de Magistratura do Rio Grande do Norte
+                                </li>
+                                <li> Práticas integrativas sistêmicas, com foco na constelação familiar, pelo Constela Natal. </li>
+                              </ul>
+                            </div>
+                            <!-- <div class="modal-footer">
+                              <button type="button" class="btn ml-auto primary-button" data-dismiss="modal">Fechar</button>
+                            </div> -->
+                          </div>
                         </div>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -528,6 +600,18 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/metismenu.js"></script>
     <script src="assets/js/active.js"></script>
+    <script>
+    $(function () {
+      $('.popup-modal').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        showCloseBtn: true,
+        closeOnBgClick: true,
+        focus: '#username',
+        modal: true
+      });
+      });
+    </script>
 </body>
 
 </html>
